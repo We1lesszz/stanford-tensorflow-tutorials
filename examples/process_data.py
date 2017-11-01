@@ -13,7 +13,8 @@ import numpy as np
 from six.moves import urllib
 import tensorflow as tf
 
-import utils
+from examples import utils
+
 
 # Parameters for downloading data
 DOWNLOAD_URL = 'http://mattmahoney.net/dc/'

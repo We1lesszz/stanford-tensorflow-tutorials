@@ -15,7 +15,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.contrib.tensorboard.plugins import projector
 
-from process_data import process_data
+from examples import process_data
 
 VOCAB_SIZE = 50000
 BATCH_SIZE = 128

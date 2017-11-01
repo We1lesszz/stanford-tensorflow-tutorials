@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import xlrd
 
-import utils
+from examples import utils
 
 DATA_FILE = 'data/fire_theft.xls'
 

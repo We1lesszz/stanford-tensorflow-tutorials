@@ -15,8 +15,9 @@ import numpy as np
 from tensorflow.contrib.tensorboard.plugins import projector
 import tensorflow as tf
 
-from process_data import process_data
-import utils
+from examples import process_data
+from examples import utils
+
 
 VOCAB_SIZE = 50000
 BATCH_SIZE = 128
@@ -150,7 +151,7 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
 def main():
     model = SkipGramModel(VOCAB_SIZE, EMBED_SIZE, BATCH_SIZE, NUM_SAMPLED, LEARNING_RATE)
     model.build_graph()
-    batch_gen = process_data(VOCAB_SIZE, BATCH_SIZE, SKIP_WINDOW)
+    batch_gen = process_data.process_data(VOCAB_SIZE, BATCH_SIZE, SKIP_WINDOW)
     train_model(model, batch_gen, NUM_TRAIN_STEPS, WEIGHTS_FLD)
 
 if __name__ == '__main__':
