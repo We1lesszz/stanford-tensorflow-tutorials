@@ -34,7 +34,7 @@ from matplotlib import gridspec as gridspec
 from matplotlib import pyplot as plt
 import tensorflow as tf
 
-import kernels
+from examples import kernels
 
 FILENAME = 'data/friday.jpg'
 

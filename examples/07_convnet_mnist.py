@@ -18,7 +18,7 @@ import tensorflow as tf
 import tf.contrib.layers as layers
 from tensorflow.examples.tutorials.mnist import input_data
 
-import utils
+from examples import utils
 
 N_CLASSES = 10
 
